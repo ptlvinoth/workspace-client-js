@@ -117,6 +117,7 @@ class VoiceApi {
         if (reasonCode) {
             msg += ` reasonCode [${reasonCode}]...`;
             data.notReadyData.reasonCode = reasonCode;
+            data.notReadyData.data.reasonCode = reasonCode;
         }
 
         this._log(msg);
